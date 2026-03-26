@@ -1,26 +1,26 @@
 class Grove < Formula
   desc "The complete AI development workflow — from spec to ship"
   homepage "https://garrickz2.github.io/grove/"
-  version "0.7.13"
+  version "0.7.14"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "86bdb7618e0656af4d51759973155e28469f708de4c3055918e8480a8de92713"
+      sha256 "0f4a1e5ba639a4decae1281398d8893707af599adcf3c3382130761f600b4ae9"
     elsif Hardware::CPU.intel?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "5e936901f15b673aa9080d4030ba40fb25657d0c06aacce50bdb94edca0d13e7"
+      sha256 "56435a0fa6405b8618b2fadd4527123d0df359c40e3838e9f4768f9389506060"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "786856ab9a0035b99330391c57852c093c93a674342ec21be5098cd2e271e164"
+      sha256 "af4c43c77ed139069fdb20843816916d9e4a292f689b5aa19e1faf75cc5ddcc0"
     elsif Hardware::CPU.intel?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c8a96537739a26ec4608aa8104a08c7afc6e6446e67f4ada082e11ed4b0ca174"
+      sha256 "b8f9fe81d325a896ac5de50034ff8b2de5bd44466b8309c1d086982e94e9cd5e"
     end
   end
 
