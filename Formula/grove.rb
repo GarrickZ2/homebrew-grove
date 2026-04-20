@@ -7,20 +7,20 @@ class Grove < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "91cb983be4a55de8bc0344aecc1315e26163e49e7ba897efbba0f774dd564063"
+      sha256 "ac3279bbca83a901ac20140741e83a5f41e52f8ef0ecdc6fee20e6238c3fa194"
     elsif Hardware::CPU.intel?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "a704c4419de18fa78a879700e59a0d33df630102bae37851367115054673c64a"
+      sha256 "61bf1bb2c12b9b66edb045ccf78b984a09ca4f410a95e3dedd6294c01886ac9d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "39924d2e305e570a61780c01fb4d636dbdc5f05e978bc131c41a1d18002ae38c"
+      sha256 "beae8b2304ae1e33d75e85535533b4915724aa4895bd9df0c6e68922a21f8423"
     elsif Hardware::CPU.intel?
       url "https://github.com/GarrickZ2/grove/releases/download/v#{version}/grove-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "6d61e084422f37c04c85975930210d835eec57909cd4e4403fb6c3886b62cbf5"
+      sha256 "0869720dc17d5a3b894d5f473379366fb9535f7825d78ee1c0d43245b8dd7f77"
     end
   end
 
